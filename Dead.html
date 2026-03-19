@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<!--Okay, this is less functional website and more toy for playing 
+with all the features I could get my hands on from books and stuff. -->
+<html>
+    <!--PAC!!!!!!!!!!!!!!!!!!!! I have none-->
+    <head>
+        <!--IF YOU ARE HERE. YOU ARE A NERD. DUMMY.
+        SO AM I BUT WHO CARES?
+        THERE ARE EASTER EGGS EVERYWHERE.
+        COULDN'T LET ANYONE THINK THE SITE IS BORING,
+        COULD I?-->
+        <title> YES </title>
+        <style>
+            body {
+                background: linear-gradient(red, yellow, green, skyblue, lavender)
+            }
+            #starting {
+                color: darkred;
+                border: solid 5px blue;
+                padding:5px;
+                background: aquamarine;
+                header div {
+                    font-size: xx-large;
+                    text-align: center;
+                }
+            }
+            #anchors {
+                a {
+                    color: cornflowerblue;
+                    display: block;
+                    transition: all 1.5s;
+                }
+                a:visited {
+                    color: purple;
+                    font-size: 1.5em;
+                    text-decoration: none;
+                }
+                h2 {
+                    color: green;
+                }
+            }
+            #info {
+                ol, ul {
+                    background-color: skyblue;
+                    margin:10px;
+                    border: solid 5px gold;
+                }
+                div table {
+                    background-color: azure;
+                    margin: 10px;
+                }
+            }
+            #scripts {
+                button {
+                    background-color: blanchedalmond;
+                    border: 2px black;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="starting">
+            <a name="starta"> </a>
+            <header>
+                <div>
+                    <h1>This is a website!</h1>
+                </div>
+                <br>
+                <h2>This site has everything.</h2>
+                <h3>So it's good if you want to learn.</h3>
+                <h4>As of now, we already have all these headers.</h4>
+                <h5> And the line break.</h5>
+                <h6>Six headers, in total.</h6>
+            </header>
+            <div>
+                <br>
+                <p>It's very useful to discover the line break. <br> 
+                Really better for the web. <br> This is 3 lines already, wanna go some more?</p>
+            </div>
+            <br> <br> <br>
+            <hr>
+            <!--This is a terrible top of the website.-->
+        </div>
+        <!--167-->
+        <div id="anchors">
+            <h2>Links to different Parts of the Page</h2>
+            <a href="#starta">Back to start</a>
+            <a href="#typea">To Information Types Section</a>
+            <a href="#ja">Scripts and Interaction</a>
+            <a href="#lottoa">Win The Lottery</a>
+            <a href="#stylea">Styling</a>
+            <br> <hr>
+        </div>
+        <div id="info">
+            <a name="typea"> </a>
+            <h2>Interesting Information Types</h2>
+            <ol>
+                <li>This is an ordered list.</li>
+                <li>It numbers its entries.</li>
+                <li>Perfectly.</li>
+            </ol>
+            <hr>
+            <ul>
+                <li>This is an unordered list.</li>
+                <li>It uses bullet points.</li>
+            </ul>
+            <hr>
+            <p>Let's see what happens when we combine them!</p>
+            <div>
+                <ol>
+                    <li>Ima try putting bullet points as an entry.</li>
+                    <li> I mean, of course you can <br> break an entry.</li>
+                    <li> <ul>
+                        <li>This puts nice auto style inside.</li>
+                        <li>It works perfectly! And uses a different bullet!</li>
+                        <li><ol>
+                            <li>Let's do this again...</li>
+                            <li>And again!</li>
+                        </ol></li>
+                        <li>Cool, right?</li>
+                    </ul></li>
+                    <li>And the stack continues to go 100% yessssssss.</li>
+                </ol>
+            </div>
+            <button onclick='reveal()' style="background-color:green; border: none;"></button>
+            <hr>
+            <div>
+                <h2>Let's go tabling!</h2>
+                <table border="2">
+                    <caption>This is a table caption. <br> Looks normal, huh?</caption>
+                    <thead>
+                        <tr>
+                            <td colspan="2">This is a head<strong>er</strong>.</td>
+                            <td>More data here?</td>
+                        </tr>
+                    </thead>
+                    <th>And this is a heading for a table.</th>
+                    <th>This is another heading.</th>
+                    <th>Third heading!</th>
+                    <tr>
+                        <td> Don't get confused!</td>
+                        <td>Header or heading?</td>
+                        <td>Just the head of a column.</td>
+                    </tr>
+                    <tr>
+                        <td>Second row...</td>
+                        <td>Boring. And what it looks like in the table...</td>
+                        <td>is different from what I was imagining in <br>the code.</td>
+                    </tr>
+                    <tr>
+                        <td>I like this table and all its tags!</td>
+                        <td>This table stuff has potential...</td>
+                        <td>if you have patience.</td>
+                    </tr>
+                    <tfoot>
+                        <td colspan="3">And a footer here!</td>
+                    </tfoot>
+                </table>
+                <p>Nice.<br>By right, the header should store the headings.</p>
+            </div>
+            <br><br><br> 
+            <hr>
+        </div>
+        <div id="scripts">
+            <a name="ja"> </a>
+            <h2>Interactives with Scripts</h2>
+            <p> <br>Check your console</p><!--284-->
+            <script>
+                console.log('Hello! Watch this console!');
+            </script>
+            <div>
+                <button onclick="more()">Click me</button>
+            </div>
+            <br><hr>
+            <div>
+                <h2>Let's make a password!</h2>
+                <label>Password, please</label>
+                <input id="Password" type="password"/>
+                <button onclick="word()">Save password</button>
+                <script>
+                    
+                </script>
+            </div>
+            <br>
+            <button onclick="Expose()">      </button>
+            <br><br><hr>
+            <div id="lotto">
+                <a name="lottoa"></a>
+                <h1>Win The Lottery!!!</h1>
+                <label>Your guess (from 1 to 50)</label>
+                <input id="Guess"/>  <br>
+                <button onclick="spin()">Spin!</button>
+                <br><br><hr>
+            </div>
+            <div>
+                <h2>To Do List (for you organised people)</h2>
+                <br>
+                <label>What I need to do today</label>
+                <input id="newitem" type="text"/>
+                <button onclick="addItem()">Add to To Do</button>
+                <ol id="List">
+
+                </ol>
+            </div>
+            <br><br><br>
+            <hr/>
+        </div>
+        <div>
+            <a name="stylea"></a>
+            <h1>Let's Style!</h1>
+            <style>
+                img {
+                    max-width: 200px;
+                    float: right;
+                }
+                @keyframes turn {
+                    from {transform: rotate(0deg);}
+                    to {transform: rotate(25deg);}
+                }
+                .animated {
+                    animation-name: turn;
+                    animation-duration: 4s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                }
+            </style>
+            <p>
+                Styling in a website is easy peasy. Just insert a style sheet
+                anywhere you want and follow some basic syntax (well, basic for me) <br>
+                Name each attribute and its value and you get cool stuff, like this...
+            </p>
+            <br> 
+            <p style="color: blue; text-decoration: underline;">This text is blue with underlining.</p>
+            <p style="background: linear-gradient(green, yellow);">This has some cool highlighter.</p>
+            <p style="font-size: 1.5em; background: red;">I WANT TO EMPHASISE THIS.</p>
+            <p>
+                <strong>This text appears bold,</strong>
+                <em> while this is italics.</em>
+                <br>
+                <sup>this text is up</sup> while 
+                <sub> this text is down. </sub> 
+                <br>
+                <del>This one is strikethrough or deleted.</del>
+            </p>
+            <img src="dino.png" alt="Dinosaur"/>
+            <p>Let's look at pictures! <br> they move, by the way</p>
+            <br> <br> <br> <br>
+            <img class="animated" src="htmsightreadable.png" alt="ussr"/>
+        </div>
+        <script>
+            var click = 0;
+            pin = Math.random();
+
+            function addItem() {
+                click++;
+                var itemtext = document.getElementById('newitem').value;
+                var listItem = document.createElement('li');
+                listItem.innerHTML = itemtext;
+                document.getElementById('List').appendChild(listItem);
+                document.getElementById('newitem').value = '';
+            }
+
+            function reveal() {
+                click++;
+                var scontent = '<hr><h1> Yes, you exposed secret content. <br> Look at the Source code. </h1>'
+                document.body.innerHTML += scontent
+            }
+
+            function more() {
+                click++;
+                console.log('you have ' + click + ' clicks');
+                if (click > 499) {
+                    var morecontent = '<hr><h1> You really put in effort! <br> Here\'s' + pin + ' more dollars for you!'
+                    document.body.innerHTML += morecontent
+                }
+            };
+
+            var correctpass = prompt('Enter something here!');
+            function word() {
+                click++;
+                var pass = document.getElementById('Password').value;
+                console.log('You have submitted a password of ' + pass);
+                if (pass == correctpass) {
+                    return alert('Congrats, you solved the password!');
+                }
+                else {
+                    return alert('That was not correct. Remember your input!');
+                };
+            };         // 500
+            function Expose() {
+                click++;
+                var Thepin = document.getElementById("random").value;
+                var content = ' <hr> <h1> You have exposed secret content! </h1>';
+                document.body.innerHTML += content;
+                if (Thepin == String(pin)) {
+                    content = '<hr> <h1> You won! </h1> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Claim your prizes</a>'
+                    document.body.innerHTML += content
+                }
+                
+            }
+
+            function spin() {
+                click++;
+                var guess = document.getElementById('Guess').value;
+                guess = parseInt(guess);
+                if (guess == '') {
+                    alert('Guess first!');
+                }
+                else {
+                    var num = Math.round(Math.random() * 50);
+                    console.log('The result is ' + num);
+                    if (guess == num) {
+                        console.log('Correct guess!');
+                        var content = '<h1> You have won the lottery!</h1> <p> Here\'s 1 million dollars! </p>';
+                        document.body.innerHTML += content;
+                    }
+                    else {
+                        console.log('Wrong guess!');
+                    }
+                }
+            }
+        </script>
+        <div>
+            <hr>
+            <div id="block" >
+                <p>Okay!!! Last one!</p>
+                <input id="random" type="text"/>
+            </div>
+            <style>
+                #block {
+                    p, input {
+                        color: white;
+                    }
+                }
+                @media (max-width: 800px) {
+                    #block {
+                        p, input {
+                            color: black;
+                        }
+                    }
+                }
+                footer {
+                    h2, p {
+                        color: white;
+                        text-align: center;
+                    }
+                }
+            </style>
+            <footer style="background-color: black;">
+                <h2>COPYRIGHTED BY RIGHT OF RIGHT</h2>
+                <p>.</p>
+                <p>2026</p>
+            </footer>
+        </div>
+    </body>
+</html>
