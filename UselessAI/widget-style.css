@@ -1,0 +1,26 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.widget-link {
+  display: block;
+  padding: 1rem;
+  background: lightgray;
+  border-radius: 8px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.widget-link:hover {
+  background: gray;
+  font-size: 1em;
+}
+
+.widget-link:visited {
+    color: black;
+}

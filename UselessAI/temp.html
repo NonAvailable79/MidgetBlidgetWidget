@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+<body>
+    <nav>
+    <a href="#part1" onclick="showPart('part1')">Part 1</a>
+    <a href="#part2" onclick="showPart('part2')">Part 2</a>
+    </nav>
+
+    <div id="part1" class="part">Content 1</div>
+    <div id="part2" class="part">Content 2</div>
+
+    <script>
+    function showPart(id) {
+    document.querySelectorAll('.part').forEach(el => el.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Useless AI</title>
+        <link rel="stylesheet" href="duh.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="home">Utterly Unusable AI </a>
+        </header>
+        <div id="back-to-all-widgets">
+            <a href="widgets.html">Back</a>
+        </div>
+        <main>
+            <div id="widgets-battery">
+                <h2>Battery Widget</h2>
+                <p>Battery measurer/warner. <br>
+                    May be inaccurate.</p>
+                <div class="widget-box"></div>
+            </div>
+            <div id="widgets-placeholder"></div>
+            <!--copy this copy copy copy coypkooog-->
+        </main>
+            <script>
+                function showPart(id) {
+                    document.querySelectorAll('.part').forEach(el => el.style.display = 'none'); //basically hide the whole page ._.
+                    document.getElementById(id).style.display = 'block'; //just show the one you wanted
+                    document.getElementById("back-to-all-widgets").style.display = 'block'; //show the back button
+                }
+            </script>
+    </body>
+</html>

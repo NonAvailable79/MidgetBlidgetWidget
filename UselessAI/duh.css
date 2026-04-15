@@ -1,0 +1,64 @@
+/* General Stuff */
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: aquamarine;
+}
+header {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    position: sticky;
+}
+
+footer {
+    background-color: blue;
+    color: cornsilk;
+    padding: 10px;
+}
+
+/* displaying links */
+a {
+    text-decoration: none;
+    color: cornflowerblue;
+    display: block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: purple;
+}
+table {
+    border-width: 0;
+}
+th {
+    text-align: left;
+}
+
+.home {
+    color: orange;
+    display: block;
+    font-variant: small-caps;
+    font-size: 3em;
+}
+
+.home:visited {
+    color: orange;
+}
+
+.home:hover {
+    text-decoration: underline;
+    font-size: 3em;
+}
+
+/* fake social media (not a link) */
+.fake-social-media {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+.fake-social-media:hover {
+    text-decoration: underline;
+}
